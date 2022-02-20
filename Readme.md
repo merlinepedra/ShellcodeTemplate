@@ -38,6 +38,8 @@ SEC( text, B ) VOID Entry( VOID )
 Btw as you can see we can use normal strings in our shellcode. This is because we include the .rdata section into our shellcode at linking time.
 And GET_SYMBOL gets the pointer to the function or string via its relative offset to GetRIP()
 
+![Preview](https://github.com/Cracked5pider/ShellcodeTemplate/blob/main/img/debugger.png)
+
 ### Get Started
 Clone this project and you are ready to start
 ```
@@ -52,4 +54,4 @@ make x86    // to compile only x86
 ```
 
 ### Credit 
-Huge credit goes to [Austin Hudson's (aka SecIdiot)](https://twitter.com/ilove2pwn_)!!!
+Huge credit goes to [Austin Hudson (aka SecIdiot)](https://twitter.com/ilove2pwn_)!!!
