@@ -19,8 +19,8 @@ all: x64 x86
 
 x64: clean
 	@ echo "[*] Compile x64 executable..."
-
-	@ nasm -f win64 src/asm.s -o bin/asm.x64.o
+	
+	@ nasm -f win64 src/asm/x64/asm.s -o bin/asm.x64.o
 	@ $(CCX64) src/*.c bin/asm.x64.o -o $(EXECUTABLE_X64) $(CFLAGS) $(LFLAGS) -Iinclude -masm=intel
 
 	@ echo "[*] Extract shellcode: $(RAWBINARY_X64)"
@@ -31,7 +31,7 @@ x64: clean
 x86: clean
 	@ echo "[*] Compile x86 executable..."
 
-	@ nasm -f win32 src/asm.s -o bin/asm.x86.o
+	@ nasm -f win32 src/asm/x86/asm.s -o bin/asm.x86.o
 	@ $(CCX86) src/*.c bin/asm.x86.o -o $(EXECUTABLE_X86) $(CFLAGS) $(LFLAGS) -Iinclude -masm=intel
 
 	@ echo "[*] Extract shellcode: $(RAWBINARY_X86)"
