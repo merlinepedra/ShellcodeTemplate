@@ -1,6 +1,6 @@
 # Shellcode Template
 
-A easily modifiable shellcode template for Windows x64/x86
+An easily modifiable shellcode template for Windows x64/x86
 
 ### How does it work? 
 This template is heavily based on [Austin Hudson's (aka SecIdiot)](https://twitter.com/ilove2pwn_) [TitanLdr](https://github.com/SecIdiot/TitanLdr)
